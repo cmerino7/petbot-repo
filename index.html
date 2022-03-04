@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function myFunc() {
+        document.getElementById("lab02").style.color = "red";
+    }
+</script>
+
+<body>
+    <h2> This is first example </h2>
+    
+    <p id = "lab02"> This text is going to be changed. </p>
+    
+    <button type="button" onclick='document.getElementById("lab02").innerHTML = "This is new text!"'>Change</button>
+
+    <button type="button" onclick="myFunc()"> Color</button>
+</body>
+</html>
