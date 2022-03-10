@@ -2,18 +2,27 @@
 <html>
 <script>
     function myFunc() {
-        document.getElementById("lab02").style.color = "red";
+        document.getElementById("PETBOTtext").style.color = "red";
     }
+</script>
+
+<script src="https://petbot.chestr.me/assets/modules/channel-web/inject.js"></script>
+
+<script>
+  window.botpressWebChat.init({ host: 'https://petbot.chestr.me', botId: 'testbot4pet' })
 </script>
 
 <body>
     <h2> This is first example </h2>
     
-    <p id = "PETBOT"> petbot text petbot text. </p>
-    <script src="https://petbot.chestr.me/assets/modules/channel-web/inject.js"></script>
+    <p id = "PETBOTtext"> petbot text petbot text. </p>
     
-    <button type="button" onclick='document.getElementById("lab02").innerHTML = "This is new text!"'>Change</button>
+    
+    <button type="button" onclick='document.getElementById("PETBOTtext").innerHTML = "This is new text!"'>Change</button>
 
     <button type="button" onclick="myFunc()"> Color</button>
+
+
+
 </body>
 </html>
