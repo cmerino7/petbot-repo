@@ -4,86 +4,74 @@
     <title>CSE 155 -> Project </title>
 
     <!-- Style: I put it here to make easy to read. Instead put in a another CSS file. -->
-    <style></style>
+    <style>
+      body {  
+      background-color: #757575; 
+      padding: 30px; 
+      font-family: 'Roboto', sans-serif;
+      }  
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      img {
+        max-width: 100%
+      }
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+        text-align: center;
+      }
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+      /* Button: Style of button are below, if want anything change here... */
+      .button {
+        background-color: #8EBBC9; /* Green */
+        border: none;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: -25px 2px;
+        cursor: pointer;
+      }
+      .button-circle {border-radius: 50%;}
+      .btn-fade .button:hover {
+        background-color: #3e8e41;
+      }
+      .btn-fade{
+        text-align: right;
+      }
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    </style>
   </head>
 
   <!-- Body: This is HTML file, main body -->
   <body>
-    
-    <div class="hero">
-      <nav>
-        <h2 class="logo">Chat<span>Box</span></h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="container">
-        <div class="text">
-          <h1>Pet <span>Chatbot</span></h1>
-          <p>A chatbot that, based on your answers, will recommend the perfect pet for you! 
-             Either login to save any progress or if you want a quick answer, 
-             just go straight into Petbot! <br> </p>
-        </div>
-  
-        <!-- Width and Height here will be change by responsive move the window smaller -->
-        <div class="image">
-          <img src="images/pic1.png" alt="" width="750" height="750"> 
-        </div>
-      </div>
-    </div>
-
-    
-
-
-    <!-- 1. Old Version UI: we can change this back
-      <div class="container">
+    <div class="container">
       <div class="image">
-        <iframe src="http://164.92.75.172/guest/conversations/production/0cfbf1d0c42d4a12b84ad0337b19ba65" width="800" height="700" style="border: 0;" allowfullscreen="" loading="lazy" ></iframe>
+        <img src="images/pic1.png" alt="" width="550" height="700"> <!-- Width and Height here will be change by responsive move the window smaller -->
       </div>
-
       <div class="text">
         <h1>Petbot Chatbot</h1>
-        <p>A chatbot that, based on your answers, will recommend the perfect pet for you! 
-           Either login to save any progress or if you want a quick answer, 
-           just go straight into Petbot! <br> </p>
-           <img src="images/pic1.png" alt="" width="450" height="500">
+        <p>A chatbot that, based on your answers, will recommend the perfect pet for you! <br> 
+           Either login to save any progress or if you want a quick answer, <br> 
+           just go straight into Petbot!</p>
       </div>
-    </div> -->
+      
+    </div>
 
-    <!-- Hand Made Button: Chat BOX -->
-    <button class="open-button" onclick="openForm()">Chat</button>
-      <div class="chat-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-            <iframe src="http://137.184.82.12:30013/guest/conversations/production/3abb055c04044facad847747e6ce90ea" width="750" height="730" style="border: 0;" allowfullscreen="" loading="lazy"  ></iframe>
-            <button type="button" class="btn cancel" onclick="closeForm()">X</button>
-          </form>
-      </div>
-
-    <!-- JavaScript Here for Button -->
-    <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-    </script>
-
-    <!-- Button Chat: BLUE Little Circle -->
-    <!-- <div id="rasa-chat-widget" data-websocket-url="http://164.92.75.172"></div>
-    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script> -->
-
+    <!-- Button Chat: anything change later here... -->
+    <!--<div class="btn-fade">
+      <button class="button button-circle">Chat</button>
+    </div>-->
+    <div id="rasa-chat-widget" data-websocket-url="http://164.92.75.172"></div>
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
   </body>
+
 </html>
