@@ -1,14 +1,14 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: sans-serif;
 	box-sizing: border-box;
 }
 
 body {  
 	background-color: #757575; 
 	padding: 50px; 
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Roboto', 'Josefin Sans', sans-serif; */
 	}  
 	.container {
 	  display: flex;
@@ -22,13 +22,13 @@ body {
 	  flex-basis: 100%
 	}
 	.text {
-	  font-size: 30px;
+	  font-size: 25px;
 	  padding-left: 20px;
 	  text-align: center;
 	}
   /* Button used to open the contact form - fixed at the bottom of the page */
 	.open-button {
-	background-color: rgba(13, 73, 254, 0.974);
+	background-color: rgb(0, 64, 255);
 	color: white;
 	padding: 26px 20px;
 	border: none;
