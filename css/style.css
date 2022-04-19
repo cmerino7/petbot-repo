@@ -1,0 +1,165 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+body {  
+	background-color: #757575; 
+	padding: 50px; 
+	font-family: 'Roboto', sans-serif;
+	}  
+	.container {
+	  display: flex;
+	  align-items: center; /* =>> Here is center of the whole TEXT */
+	  justify-content: center
+	}
+	img {
+	  max-width: 100%
+	}
+	.image {
+	  flex-basis: 100%
+	}
+	.text {
+	  font-size: 30px;
+	  padding-left: 20px;
+	  text-align: center;
+	}
+  /* Button used to open the contact form - fixed at the bottom of the page */
+	.open-button {
+	background-color: rgba(13, 73, 254, 0.974);
+	color: white;
+	padding: 26px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 40px;
+	right: 28px;
+	width: 70px; /* The Chat Bot Button size */
+	}
+
+  /* The popup chat - hidden by default */
+	.chat-popup {
+	  display: none;
+	  position: fixed;
+	  bottom: 0;
+	  right: 100px; /* Move the Whole chat-box to left */
+	  /* border: 3px solid #6fff00; */
+	  z-index: 9;
+	}
+
+	/* Add styles to the form container */
+	.form-container {
+	  max-width: 770px;
+	  padding: 10px;
+	  /* background-color: rgb(255, 41, 191); */
+	}
+
+	/* Set a style for the submit/send button */
+	.form-container .btn {
+	  /*background-color: #04AA6D; /* Login Button but I deleted it */
+	  color: white; 
+	  padding: 16px 20px;
+	  border: none;
+	  cursor: pointer;
+	  width: 20%; /* Close Button */
+	  margin-bottom:0px;
+	  opacity: 0.8;
+	}
+
+	/* Add a red background color to the cancel button */
+	.form-container .cancel {
+	  background-color: red;
+	  color: black;
+	  padding: 26px 20px;
+	  border: none;
+	  cursor: pointer;
+	  opacity: 10;
+	  position: fixed;
+	  bottom: 40px;
+	  right: 28px;
+	  width: 70px; /* The Chat Bot Button size */
+	}
+
+	/* Add some hover effects to buttons */
+	.form-container .btn:hover, .open-button:hover {
+	  opacity: 1;
+	}
+
+.hero{
+	width: 100%;
+	/* height: 100vh;
+	background-image: url(../images/pic2.png);  
+	background-size: cover;
+	background-position: center;*/
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 0px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #f9004d;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 1px  30px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #f9004d;
+	transition: .4s;
+}
+.btn{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 50px;
+}
+
+
+button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
