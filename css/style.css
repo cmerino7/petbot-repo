@@ -18,12 +18,12 @@ body {
 	  width: 100%;
 	  padding: 0px 0px;
 	}
-	/* .container img{
+	.container img{ /* =>> Cmt this if change to ChatBot - no pic */
 		height: auto;
 		width: 430px;
-	} */
+	}
 	.image {
-		/* width: 1130px; */
+		width: 1130px;  /* =>> Cmt this if change to ChatBot - no pic */
 		max-width: 100%;
 		margin: 0 auto;
 		display: flex;
