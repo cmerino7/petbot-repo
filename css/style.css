@@ -16,22 +16,22 @@ body {
 	  align-items: center; /* =>> Here is center of the whole TEXT */
 	  justify-content: center;
 	  width: 100%;
-	  padding: 100px 0px;
+	  padding: 0px 0px;
 	}
-	.container img{
+	/* .container img{
 		height: auto;
 		width: 430px;
-	}
+	} */
 	.image {
-		width: 1130px;
-		max-width: 95%;
+		/* width: 1130px; */
+		max-width: 100%;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 	}
 	.text {
-	  font-size: 25px;
+	  font-size: 23px;
 	  padding-left: 20px;
 	  text-align: center;
 	}
