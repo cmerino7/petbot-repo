@@ -6,7 +6,7 @@
 }
 
 body {  
-	background-color: #757575; 
+	background-color:cornsilk ; 
 	padding: 50px; 
 	/* font-family: 'Roboto', 'Josefin Sans', sans-serif; */
 	}  
@@ -34,10 +34,14 @@ body {
 	  font-size: 23px;
 	  padding-left: 20px;
 	  text-align: center;
+	  position: relative;
+	  z-index: -1;
+
 	}
   /* Button used to open the contact form - fixed at the bottom of the page */
 	.open-button {
 	background-color: rgb(0, 64, 255);
+	font-size: 18px;
 	color: white;
 	padding: 26px 20px;
 	border: none;
@@ -46,7 +50,8 @@ body {
 	position: fixed;
 	bottom: 40px;
 	right: 28px;
-	width: 70px; /* The Chat Bot Button size */
+	width: 90px; /* The Chat Bot Button size */
+	height: 70px;
 	}
 
   /* The popup chat - hidden by default */
@@ -113,13 +118,16 @@ nav{
 	padding-right: 8%;
 }
 .logo{
-	color: white;
+	color: blue;
 	font-size: 35px;
 	letter-spacing: 1px;
 	cursor: pointer;
 }
 span{
-	color: rgb(0, 64, 255);
+	color: blue;
+}
+.bot{
+	color: red;
 }
 nav ul li{
 	list-style-type: none;
@@ -151,7 +159,7 @@ nav ul li a:hover{
 }
 
 h1{
-	color: white;
+	color: black;
 	margin: 20px 0px 20px;
 	font-size: 50px;
 }
@@ -172,3 +180,12 @@ button:hover{
 	border: 2px solid #f9004d;
 	cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
